@@ -5,17 +5,28 @@ import re
 import sys
 
 # Complete the staircase function below.
-def imprime(n):
-    for i in range(n):
-        t+='#'
+
 def staircase(n):
-    if n==1:
-      print('#')
-    else:
-      staircase(n-1)
-      imprime(n)
+    t=''
+    for index in range(n):
+      t+='#'
+      print(t)
+      
+     
+def staircase_rigth(n):
+    t=''
+    for i in range(n):
+     
+      for index in range(n-(i+1)):
+        t+=' '
+      
+      for item in range(i+1):
+        t+='#' 
+      print(t)
+      t=''  
+      
       
 if __name__ == '__main__':
-    n = 2
+    n = 6
 
-    staircase(n)
+    staircase_rigth(n)
