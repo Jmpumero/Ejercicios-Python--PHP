@@ -43,7 +43,6 @@ def climbingLeaderboard(ranked, player):
                 else:
                     
                     if ranked[j-1]!= ranked[j]:
-                       
                         poss+=1
                     
                     
